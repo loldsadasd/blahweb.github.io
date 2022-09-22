@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Presentation Page</title>
+    <meta property="og:title" content="Presentation Page" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 18px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      html {
+      scroll-behavior: smooth;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div data-role="Header" class="home-navbar-container">
+          <div class="home-navbar">
+            <div class="home-logo">
+              <img
+                alt="image"
+                src="public/playground_assets/default-img.svg"
+                class="home-image"
+              />
+            </div>
+            <div class="home-links-container">
+              <a href="#features" class="home-link">ăn hại</a>
+              <a href="#services" class="home-link1 anchor">ngu</a>
+              <span class="home-link2 anchor">Amongus</span>
+              <span class="home-link3">
+                <span>Đáy xã hội</span>
+                <br />
+              </span>
+            </div>
+            <div class="home-cta-container">
+              <div data-type="BurgerMenu" class="home-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="home-icon">
+                  <path
+                    d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div data-type="MobileMenu" class="home-mobile-menu">
+              <div class="home-top">
+                <img
+                  alt="image"
+                  src="public/playground_assets/default-img.svg"
+                  class="home-image1"
+                />
+                <div data-type="CloseMobileMenu" class="home-container01">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="home-mid">
+                <div class="home-links-container1">
+                  <a href="#features" class="home-link4 anchor">features</a>
+                  <a href="#services" class="home-link5 anchor">services</a>
+                  <span class="home-link6 anchor">About Us</span>
+                  <span class="home-link7 anchor">contact</span>
+                </div>
+                <button class="home-cta-btn anchor button">
+                  sTART BUILDING
+                </button>
+              </div>
+              <div class="home-bot">
+                <div class="home-social-links-container">
+                  <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
+                    <path
+                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="home-icon06"
+                  >
+                    <path
+                      d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="home-icon08"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-hero">
+          <div class="home-hero-text-container">
+            <h1 class="home-heading">8/1</h1>
+            <span class="home-text02 section-Text">
+              blah...............................................................
+            </span>
+            <a
+              href="https://www.messenger.com/t/5356812264409795"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-cta-btn1 button"
+            >
+              ĐI ĐẾN NHÓM
+            </a>
+          </div>
+          <img
+            alt="pastedImage"
+            src="public/playground_assets/pastedimage-zyme-200h.png"
+            class="home-pasted-image"
+          />
+        </div>
+        <div class="home-section-separator"></div>
+        <div id="features" class="home-features">
+          <div class="home-heading-container">
+            <h2 class="home-text03 section-Heading">UPLOAD tên</h2>
+            <span class="home-text04 section-Text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              nec odio. Praesent libero. Sed cursus ante dapibus diam.
+            </span>
+          </div>
+          <div class="home-cards-container">
+            <div class="home-feature-card">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1619548683455-23b17c3ddc30?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;h=1000"
+                class="home-image2"
+              />
+              <span class="home-heading1 card-Heading">Why</span>
+              <span class="home-text05 card-Text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                nec odio. Praesent libero. Sed cursus ante dapibus diam.c Sed
+                nisi. Nulla quis sem at nibh elementum imperdiet.
+              </span>
+            </div>
+            <div class="home-feature-card1">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1619547871672-b6562e042c1e?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;h=1000"
+                class="home-image3"
+              />
+              <span class="home-heading2 card-Heading">What</span>
+              <span class="home-text06 card-Text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                nec odio. Praesent libero. Sed cursus ante dapibus diam.c Sed
+                nisi. Nulla quis sem at nibh elementum imperdiet.
+              </span>
+            </div>
+            <div class="home-feature-card2">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1619555241737-9c364cf1fbce?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;h=1000"
+                class="home-image4"
+              />
+              <span class="home-heading3 card-Heading">How</span>
+              <span class="home-text07 card-Text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                nec odio. Praesent libero. Sed cursus ante dapibus diam.c Sed
+                nisi. Nulla quis sem at nibh elementum imperdiet.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="home-stats">
+          <div class="home-stat">
+            <svg viewBox="0 0 1152 1024" class="home-icon10">
+              <path
+                d="M768 770.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"
+              ></path>
+              <path
+                d="M327.196 795.328c55.31-36.15 124.080-63.636 199.788-80.414-15.054-17.784-28.708-37.622-40.492-59.020-30.414-55.234-46.492-116.058-46.492-175.894 0-86.042 0-167.31 30.6-233.762 29.706-64.504 83.128-104.496 159.222-119.488-16.914-76.48-61.94-126.75-181.822-126.75-192 0-192 128.942-192 288 0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h279.006c14.518-12.91 30.596-25.172 48.19-36.672z"
+              ></path>
+            </svg>
+            <span class="home-text08">Customers</span>
+            <span class="home-text09">Lorem ipsum dolor sit amet.</span>
+            <h1 class="home-text10">30</h1>
+          </div>
+          <div class="home-stat1">
+            <svg viewBox="0 0 1024 1024" class="home-icon13">
+              <path
+                d="M598 512h234l-234-234v234zM640 214l256 256v426q0 34-26 60t-60 26h-470q-34 0-59-26t-25-60v-598q0-34 26-59t60-25h298zM682 42v86h-512v598h-84v-598q0-34 25-60t59-26h512z"
+              ></path>
+            </svg>
+            <span class="home-text11">Projects</span>
+            <span class="home-text12">Lorem ipsum dolor sit amet.</span>
+            <h1 class="home-text13">0</h1>
+          </div>
+          <div class="home-stat2">
+            <svg viewBox="0 0 1024 1024" class="home-icon15">
+              <path
+                d="M810 640v-86h-84v86h84zM810 810v-84h-84v84h84zM554 298v-84h-84v84h84zM554 470v-86h-84v86h84zM554 640v-86h-84v86h84zM554 810v-84h-84v84h84zM298 470v-86h-84v86h84zM298 640v-86h-84v86h84zM298 810v-84h-84v84h84zM640 470h256v426h-768v-598h256v-84l128-128 128 128v256z"
+              ></path>
+            </svg>
+            <span class="home-text14">Cities</span>
+            <span class="home-text15">Lorem ipsum dolor sit amet.</span>
+            <h1 class="home-text16">1</h1>
+          </div>
+        </div>
+        <div class="home-gallery">
+          <div class="home-container02">
+            <div class="home-container03">
+              <div class="home-container04">
+                <gallerycard2>
+                  <div
+                    class="gallery-card2-gallery-card gallery-card2-root-class-name2"
+                  >
+                    <div class="gallery-card2-container">
+                      <div class="gallery-card2-container1">
+                        <h2 class="gallery-card2-text">
+                          <span>Project Title</span>
+                        </h2>
+                        <span class="gallery-card2-text1">
+                          <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                          </span>
+                        </span>
+                        <span class="gallery-card2-text2">SHOW MORE</span>
+                      </div>
+                    </div>
+                    <img
+                      alt="image"
+                      src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxmb29kfGVufDB8fHx8MTYyNjQ0OTIzNQ&amp;ixlib=rb-1.2.1&amp;h=1000"
+                      class="gallery-card2-image"
+                    />
+                  </div>
+                </gallerycard2>
+              </div>
+              <div class="home-container05">
+                <gallerycard2>
+                  <div
+                    class="gallery-card2-gallery-card gallery-card2-root-class-name3"
+                  >
+                    <div class="gallery-card2-container">
+                      <div class="gallery-card2-container1">
+                        <h2 class="gallery-card2-text">
+                          <span>Project Title</span>
+                        </h2>
+                        <span class="gallery-card2-text1">
+                          <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                          </span>
+                        </span>
+                        <span class="gallery-card2-text2">SHOW MORE</span>
+                      </div>
+                    </div>
+                    <img
+                      alt="image"
+                      src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fGZvb2R8ZW58MHx8fHwxNjI2NDQ5NjUy&amp;ixlib=rb-1.2.1&amp;h=1000"
+                      class="gallery-card2-image"
+                    />
+                  </div>
+                </gallerycard2>
+              </div>
+            </div>
+            <div class="home-container06">
+              <gallerycard2>
+                <div
+                  class="gallery-card2-gallery-card gallery-card2-root-class-name"
+                >
+                  <div class="gallery-card2-container">
+                    <div class="gallery-card2-container1">
+                      <h2 class="gallery-card2-text">
+                        <span>Project Title</span>
+                      </h2>
+                      <span class="gallery-card2-text1">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit
+                        </span>
+                      </span>
+                      <span class="gallery-card2-text2">SHOW MORE</span>
+                    </div>
+                  </div>
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIzfHxmb29kfGVufDB8fHx8MTYyNjQ0OTY1Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                    class="gallery-card2-image"
+                  />
+                </div>
+              </gallerycard2>
+            </div>
+          </div>
+          <div class="home-container07">
+            <gallerycard2>
+              <div
+                class="gallery-card2-gallery-card gallery-card2-root-class-name4"
+              >
+                <div class="gallery-card2-container">
+                  <div class="gallery-card2-container1">
+                    <h2 class="gallery-card2-text">
+                      <span>Project Title</span>
+                    </h2>
+                    <span class="gallery-card2-text1">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      </span>
+                    </span>
+                    <span class="gallery-card2-text2">SHOW MORE</span>
+                  </div>
+                </div>
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE5fHxmb29kfGVufDB8fHx8MTYyNjQ0OTY1Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card2-image"
+                />
+              </div>
+            </gallerycard2>
+          </div>
+        </div>
+        <div class="home-gallery1">
+          <h1 class="home-text17">contact for custom</h1>
+          <span class="home-text18">
+            <span>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+                volutpat turpis.
+              </span>
+              <span></span>
+            </span>
+            <br />
+            <span>
+              <span>
+                Mauris luctus rutrum mi ut rhoncus. Integer in dignissim tortor.
+              </span>
+              <span></span>
+            </span>
+          </span>
+          <div class="home-container08">
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fG1pbmltYWxpc20lMjBjb3VjaHxlbnwwfHx8fDE2MjY0NDg1NTk&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name1"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1501127122-f385ca6ddd9d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxtaW5pbWFsaXNtJTIwaG9tZXxlbnwwfHx8fDE2MjY0NDg1Mjc&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name3"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDR8fG1pbmltYWxpc20lMjBob21lfGVufDB8fHx8MTYyNjQ0ODUyNw&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name2"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1531829039722-d3fb3e705a4b?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE4fHxtaW5pbWFsaXNtJTIwaG9tZXxlbnwwfHx8fDE2MjY0NDg1Mjc&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name4"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxtaW5pbWFsaXNtfGVufDB8fHx8MTYyNjQ0NTY1Nw&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name5"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDJ8fG1pbmltYWxpc218ZW58MHx8fHwxNjI2NDQ1NjU3&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name6"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1504198458649-3128b932f49e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fG1pbmltYWxpc20lMjBob21lfGVufDB8fHx8MTYyNjQ0ODUyNw&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name7"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE3fHxtaW5pbWFsaXNtJTIwaG9tZXxlbnwwfHx8fDE2MjY0NDg1Mjc&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name8"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1493552152660-f915ab47ae9d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fG1pbmltYWxpc20lMjBob21lfGVufDB8fHx8MTYyNjQ0ODUyNw&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name9"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1510172951991-856a654063f9?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxtaW5pbWFsaXNtJTIwaG9tZXxlbnwwfHx8fDE2MjY0NDg1Mjc&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name10"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fG1pbmltYWxpc218ZW58MHx8fHwxNjI2NDQ1NjU3&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+            <gallerycard3>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name11"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1472157510410-64a053cbc39f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fG1pbmltYWxpc20lMjBob21lfGVufDB8fHx8MTYyNjQ0ODUyNw&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="gallery-card3-image"
+                />
+                <div class="gallery-card3-container">
+                  <h1 class="gallery-card3-text"><span>Project Title</span></h1>
+                  <span class="gallery-card3-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </gallerycard3>
+          </div>
+          <footer class="home-footer">
+            <div class="home-container09">
+              <nav class="home-nav">
+                <span class="home-text25">About</span>
+                <span class="home-text26">Features</span>
+                <span class="home-text27">Pricing</span>
+                <span class="home-text28">Team</span>
+                <span class="home-text29">Blog</span>
+              </nav>
+            </div>
+            <div class="home-separator"></div>
+            <div class="home-container10">
+              <span class="home-text30">MÚN ĐIỀU CHỈNH THÌ NHẮN TIN</span>
+              <div class="home-icon-group">
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon17">
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon19">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon21">
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="home-section-separator1"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>
